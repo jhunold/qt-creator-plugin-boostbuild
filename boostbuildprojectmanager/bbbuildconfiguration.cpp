@@ -326,7 +326,6 @@ BuildConfigurationFactory::createBuildInfo(ProjectExplorer::Kit const* k
     info->buildDirectory = defaultBuildDirectory(projectPath);
     info->workingDirectory = defaultWorkingDirectory(projectPath);
     info->kitId = k->id();
-    info->supportsShadowBuild = true; // TODO: is --build-dir a shadow build?
 
     BBPM_QDEBUG(info->typeName << " in " << projectPath);
     return info;
